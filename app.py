@@ -2,7 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as stc
 
 from ml_app import run_ml_app
-from edu_app import run_edu_app
+from edu_app import run_eda_app
 
 html_temp = """
             <div style="background-color:#3872fb;padding:10px;border-radius:10px"> 
@@ -29,7 +29,7 @@ def main():
         st.subheader("Home")
         st.markdown(desc_temp, unsafe_allow_html=True)
     elif choice == "EDA":
-        run_edu_app()
+        run_eda_app()
     elif choice == "Model Section":
         run_ml_app()
     
