@@ -22,7 +22,7 @@ def main():
     # st.title("Main App")
     stc.html(html_temp)
 
-    menu = ["EDA","Model Section"]
+    menu = ["Home","EDA","Model Section"]
     choice = st.sidebar.selectbox("Menu", menu)
 
     if choice == "Home":
